@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		408D663E830205EE279F96C3 /* Pods_ICSConference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D7149A67B10E18140549F /* Pods_ICSConference.framework */; };
+		6F3BD4062366D7AF004C0E54 /* VideoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3BD4042366D7AF004C0E54 /* VideoViewCell.m */; };
+		6F67CD72236183C300D5373C /* ConferenceSFUStreamViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F67CD71236183C300D5373C /* ConferenceSFUStreamViewController.mm */; };
+		6F67CD75236185B700D5373C /* SFUStreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F67CD73236185B600D5373C /* SFUStreamView.m */; };
+		6F76DAE922DEFB20002F9143 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76DAE822DEFB20002F9143 /* WebRTC.framework */; };
+		6F76DAEA22DEFB20002F9143 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F76DAE822DEFB20002F9143 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FAC14B922E84C97006900F0 /* libsioclient_tls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FAC14B822E84C96006900F0 /* libsioclient_tls.a */; };
+		96A30AB8FDF136A985B3DB44 /* Pods_ICSConferenceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90BA06BAD48916FBCDCF46F /* Pods_ICSConferenceTests.framework */; };
+		A22A5D9A684AE162E594C0C3 /* Pods_WoogeenConferenceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776181F285C8126FEC9F7487 /* Pods_WoogeenConferenceTests.framework */; };
+		B0C890871B66323600DFF970 /* HorizontalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C890861B66323600DFF970 /* HorizontalSegue.m */; };
+		BD0D45B21B71AE3800E03D67 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0D45B11B71AE3800E03D67 /* VideoToolbox.framework */; };
+		BD4C71981D51D757005A3201 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4C71971D51D757005A3201 /* libicucore.tbd */; };
+		BD50A4A41C7D7E68005D54D9 /* FileAudioFrameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD50A4A31C7D7E68005D54D9 /* FileAudioFrameGenerator.m */; };
+		BD664F871F4D21B500448485 /* BrightenFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD664F861F4D21B500448485 /* BrightenFilter.m */; };
+		BD96E64D223D1B2F00FA6CF7 /* OWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD96E64C223D1B2F00FA6CF7 /* OWT.framework */; };
+		BD9F4AB91B0ED51B0019D425 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4AB81B0ED51B0019D425 /* main.m */; };
+		BD9F4ABC1B0ED51B0019D425 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4ABB1B0ED51B0019D425 /* AppDelegate.m */; };
+		BD9F4ABF1B0ED51B0019D425 /* ConferenceConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4ABE1B0ED51B0019D425 /* ConferenceConnectionViewController.m */; };
+		BD9F4AC21B0ED51B0019D425 /* ConferenceStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4AC11B0ED51B0019D425 /* ConferenceStreamViewController.m */; };
+		BD9F4AC51B0ED51B0019D425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9F4AC31B0ED51B0019D425 /* Main.storyboard */; };
+		BD9F4AC71B0ED51B0019D425 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9F4AC61B0ED51B0019D425 /* Images.xcassets */; };
+		BD9F4ACA1B0ED51B0019D425 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9F4AC81B0ED51B0019D425 /* LaunchScreen.xib */; };
+		BD9F4AD61B0ED51B0019D425 /* ICSConferenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4AD51B0ED51B0019D425 /* ICSConferenceTests.m */; };
+		BD9F4C391B12F17C0019D425 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F4C381B12F17C0019D425 /* AudioToolbox.framework */; };
+		BD9F4C3B1B12F18D0019D425 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F4C3A1B12F18D0019D425 /* AVFoundation.framework */; };
+		BD9F4C3F1B12F2C10019D425 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F4C3E1B12F2C10019D425 /* CoreMedia.framework */; };
+		BD9F4C421B12FAB50019D425 /* StreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F4C411B12FAB50019D425 /* StreamView.m */; };
+		BD9F4C441B12FAE30019D425 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F4C431B12FAE30019D425 /* GLKit.framework */; };
+		BDB860071ED6C54B0075390B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB860061ED6C54B0075390B /* SystemConfiguration.framework */; };
+		BDDB82761BB236CF0017BDBC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDB82751BB236CF0017BDBC /* libsqlite3.0.tbd */; };
+		BDDB82781BB236DE0017BDBC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDB82771BB236DE0017BDBC /* libstdc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD9F4AD01B0ED51B0019D425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD9F4AAB1B0ED51B0019D425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9F4AB21B0ED51B0019D425;
+			remoteInfo = WoogeenConference;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F76DAEB22DEFB20002F9143 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6F76DAEA22DEFB20002F9143 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		284D7149A67B10E18140549F /* Pods_ICSConference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICSConference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFCAD4F3B919401357716EA /* Pods-ICSConferenceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICSConferenceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICSConferenceTests/Pods-ICSConferenceTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D65A3E46E01F3BACF15B476 /* Pods-WoogeenConference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoogeenConference.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoogeenConference/Pods-WoogeenConference.release.xcconfig"; sourceTree = "<group>"; };
+		6F3BD4032366D7AF004C0E54 /* VideoViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewCell.h; sourceTree = "<group>"; };
+		6F3BD4042366D7AF004C0E54 /* VideoViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewCell.m; sourceTree = "<group>"; };
+		6F67CD70236183C300D5373C /* ConferenceSFUStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceSFUStreamViewController.h; sourceTree = "<group>"; };
+		6F67CD71236183C300D5373C /* ConferenceSFUStreamViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConferenceSFUStreamViewController.mm; sourceTree = "<group>"; };
+		6F67CD73236185B600D5373C /* SFUStreamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUStreamView.m; sourceTree = "<group>"; };
+		6F67CD74236185B700D5373C /* SFUStreamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUStreamView.h; sourceTree = "<group>"; };
+		6F76DAE822DEFB20002F9143 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = ../../libs/WebRTC.framework; sourceTree = "<group>"; };
+		6FAC14B822E84C96006900F0 /* libsioclient_tls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient_tls.a; path = ../../libs/deps/libsioclient_tls.a; sourceTree = "<group>"; };
+		7255FC571DD68795C8130167 /* Pods_WoogeenConference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoogeenConference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7687533EC33BBDCC8869372C /* Pods-ICSConference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICSConference.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICSConference/Pods-ICSConference.release.xcconfig"; sourceTree = "<group>"; };
+		776181F285C8126FEC9F7487 /* Pods_WoogeenConferenceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoogeenConferenceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82624752141EFB7C75704AC1 /* Pods-ICSConferenceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICSConferenceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICSConferenceTests/Pods-ICSConferenceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CC0D6A7FF4A6F16E43CB553 /* Pods-ICSConference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICSConference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICSConference/Pods-ICSConference.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C890851B66323600DFF970 /* HorizontalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalSegue.h; sourceTree = "<group>"; };
+		B0C890861B66323600DFF970 /* HorizontalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalSegue.m; sourceTree = "<group>"; };
+		BC97C57C973C3AFF1F16741E /* Pods-WoogeenConference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoogeenConference.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoogeenConference/Pods-WoogeenConference.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0D45B11B71AE3800E03D67 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BD16F9EE1D6D8799006FD843 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = ../../../../GPUImage/build/GPUImage.framework; sourceTree = "<group>"; };
+		BD3029981EF4C05D00F47F84 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		BD3607031D585BB000E1800F /* libsioclient_tls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient_tls.a; path = ../../libs/libsioclient_tls.a; sourceTree = "<group>"; };
+		BD4C71951D51D704005A3201 /* libsioclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient.a; path = ../../libs/libsioclient.a; sourceTree = "<group>"; };
+		BD4C71971D51D757005A3201 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BD50A4A21C7D7E4E005D54D9 /* FileAudioFrameGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAudioFrameGenerator.h; sourceTree = "<group>"; };
+		BD50A4A31C7D7E68005D54D9 /* FileAudioFrameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileAudioFrameGenerator.m; sourceTree = "<group>"; };
+		BD664F851F4D21B500448485 /* BrightenFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrightenFilter.h; sourceTree = "<group>"; };
+		BD664F861F4D21B500448485 /* BrightenFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightenFilter.m; sourceTree = "<group>"; };
+		BD86712E223DD55C00F9477B /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		BD8942DF1F9993A60078FAD3 /* libsioclient_tls_skip_verification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient_tls_skip_verification.a; path = deps/libsioclient_tls_skip_verification.a; sourceTree = "<group>"; };
+		BD96E64C223D1B2F00FA6CF7 /* OWT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OWT.framework; path = ../../../../sdk/src/out/OWT.framework; sourceTree = "<group>"; };
+		BD9F4AB31B0ED51B0019D425 /* ICS Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICS Conference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9F4AB71B0ED51B0019D425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9F4AB81B0ED51B0019D425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD9F4ABA1B0ED51B0019D425 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD9F4ABB1B0ED51B0019D425 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD9F4ABD1B0ED51B0019D425 /* ConferenceConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConferenceConnectionViewController.h; sourceTree = "<group>"; };
+		BD9F4ABE1B0ED51B0019D425 /* ConferenceConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConferenceConnectionViewController.m; sourceTree = "<group>"; };
+		BD9F4AC01B0ED51B0019D425 /* ConferenceStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConferenceStreamViewController.h; sourceTree = "<group>"; };
+		BD9F4AC11B0ED51B0019D425 /* ConferenceStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConferenceStreamViewController.m; sourceTree = "<group>"; };
+		BD9F4AC41B0ED51B0019D425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD9F4AC61B0ED51B0019D425 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD9F4AC91B0ED51B0019D425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BD9F4ACF1B0ED51B0019D425 /* ICSConferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICSConferenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9F4AD41B0ED51B0019D425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9F4AD51B0ED51B0019D425 /* ICSConferenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICSConferenceTests.m; sourceTree = "<group>"; };
+		BD9F4C381B12F17C0019D425 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BD9F4C3A1B12F18D0019D425 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BD9F4C3E1B12F2C10019D425 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BD9F4C401B12FAB50019D425 /* StreamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamView.h; sourceTree = "<group>"; };
+		BD9F4C411B12FAB50019D425 /* StreamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamView.m; sourceTree = "<group>"; };
+		BD9F4C431B12FAE30019D425 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BDB2D914200729AE00745147 /* libwoogeen_deps.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwoogeen_deps.a; path = "../../../../sdk/src/out/Debug-device-arm64/obj/talk/woogeen/libwoogeen_deps.a"; sourceTree = "<group>"; };
+		BDB2D916200DD0B700745147 /* ICS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ICS.framework; path = ../../../../sdk/src/out/ICS.framework; sourceTree = "<group>"; };
+		BDB2D918200DD16B00745147 /* libics_deps.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libics_deps.a; path = "../../../../sdk/src/out/Debug-device-arm64/obj/talk/ics/libics_deps.a"; sourceTree = "<group>"; };
+		BDB2D91A200F388000745147 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../../../../sdk/src/out/Debug-device-arm64/WebRTC.framework"; sourceTree = "<group>"; };
+		BDB860061ED6C54B0075390B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BDDB82751BB236CF0017BDBC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BDDB82771BB236DE0017BDBC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		BDDEDF621FCBF5AB003442F9 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../../../../sdk/src/out/Debug-device-arm64/WebRTC.framework"; sourceTree = "<group>"; };
+		C90BA06BAD48916FBCDCF46F /* Pods_ICSConferenceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICSConferenceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D304F87DC05F8FA0E207164B /* Pods-WoogeenConferenceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoogeenConferenceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoogeenConferenceTests/Pods-WoogeenConferenceTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD3811144DCEE9C19E783F24 /* Pods-WoogeenConferenceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoogeenConferenceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoogeenConferenceTests/Pods-WoogeenConferenceTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD9F4AB01B0ED51B0019D425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAC14B922E84C97006900F0 /* libsioclient_tls.a in Frameworks */,
+				BD4C71981D51D757005A3201 /* libicucore.tbd in Frameworks */,
+				BDDB82781BB236DE0017BDBC /* libstdc++.tbd in Frameworks */,
+				6F76DAE922DEFB20002F9143 /* WebRTC.framework in Frameworks */,
+				BDDB82761BB236CF0017BDBC /* libsqlite3.0.tbd in Frameworks */,
+				BD0D45B21B71AE3800E03D67 /* VideoToolbox.framework in Frameworks */,
+				BD9F4C441B12FAE30019D425 /* GLKit.framework in Frameworks */,
+				BD9F4C3F1B12F2C10019D425 /* CoreMedia.framework in Frameworks */,
+				BD9F4C3B1B12F18D0019D425 /* AVFoundation.framework in Frameworks */,
+				BD9F4C391B12F17C0019D425 /* AudioToolbox.framework in Frameworks */,
+				BD96E64D223D1B2F00FA6CF7 /* OWT.framework in Frameworks */,
+				BDB860071ED6C54B0075390B /* SystemConfiguration.framework in Frameworks */,
+				408D663E830205EE279F96C3 /* Pods_ICSConference.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9F4ACC1B0ED51B0019D425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22A5D9A684AE162E594C0C3 /* Pods_WoogeenConferenceTests.framework in Frameworks */,
+				96A30AB8FDF136A985B3DB44 /* Pods_ICSConferenceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		298258BECB070D523B8788C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC97C57C973C3AFF1F16741E /* Pods-WoogeenConference.debug.xcconfig */,
+				6D65A3E46E01F3BACF15B476 /* Pods-WoogeenConference.release.xcconfig */,
+				DD3811144DCEE9C19E783F24 /* Pods-WoogeenConferenceTests.debug.xcconfig */,
+				D304F87DC05F8FA0E207164B /* Pods-WoogeenConferenceTests.release.xcconfig */,
+				9CC0D6A7FF4A6F16E43CB553 /* Pods-ICSConference.debug.xcconfig */,
+				7687533EC33BBDCC8869372C /* Pods-ICSConference.release.xcconfig */,
+				82624752141EFB7C75704AC1 /* Pods-ICSConferenceTests.debug.xcconfig */,
+				3EFCAD4F3B919401357716EA /* Pods-ICSConferenceTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD4C71921D51D6F8005A3201 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FAC14B822E84C96006900F0 /* libsioclient_tls.a */,
+				BD96E64C223D1B2F00FA6CF7 /* OWT.framework */,
+				BDB2D918200DD16B00745147 /* libics_deps.a */,
+				BDB2D916200DD0B700745147 /* ICS.framework */,
+				BDB2D914200729AE00745147 /* libwoogeen_deps.a */,
+				BD8942DF1F9993A60078FAD3 /* libsioclient_tls_skip_verification.a */,
+				BD3029981EF4C05D00F47F84 /* MetalKit.framework */,
+				BDB860061ED6C54B0075390B /* SystemConfiguration.framework */,
+				BD16F9EE1D6D8799006FD843 /* GPUImage.framework */,
+				BD3607031D585BB000E1800F /* libsioclient_tls.a */,
+				BD4C71971D51D757005A3201 /* libicucore.tbd */,
+				BD4C71951D51D704005A3201 /* libsioclient.a */,
+				BDDEDF621FCBF5AB003442F9 /* WebRTC.framework */,
+				7255FC571DD68795C8130167 /* Pods_WoogeenConference.framework */,
+				776181F285C8126FEC9F7487 /* Pods_WoogeenConferenceTests.framework */,
+				284D7149A67B10E18140549F /* Pods_ICSConference.framework */,
+				C90BA06BAD48916FBCDCF46F /* Pods_ICSConferenceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD9F4AAA1B0ED51B0019D425 = {
+			isa = PBXGroup;
+			children = (
+				BD86712E223DD55C00F9477B /* WebRTC.framework */,
+				6F76DAE822DEFB20002F9143 /* WebRTC.framework */,
+				BDDB82771BB236DE0017BDBC /* libstdc++.tbd */,
+				BDDB82751BB236CF0017BDBC /* libsqlite3.0.tbd */,
+				BDB2D91A200F388000745147 /* WebRTC.framework */,
+				BD0D45B11B71AE3800E03D67 /* VideoToolbox.framework */,
+				BD9F4C431B12FAE30019D425 /* GLKit.framework */,
+				BD9F4C3E1B12F2C10019D425 /* CoreMedia.framework */,
+				BD9F4C3A1B12F18D0019D425 /* AVFoundation.framework */,
+				BD9F4C381B12F17C0019D425 /* AudioToolbox.framework */,
+				BD9F4AB51B0ED51B0019D425 /* ICSConference */,
+				BD9F4AD21B0ED51B0019D425 /* ICSConferenceTests */,
+				BD9F4AB41B0ED51B0019D425 /* Products */,
+				BD4C71921D51D6F8005A3201 /* Frameworks */,
+				298258BECB070D523B8788C9 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		BD9F4AB41B0ED51B0019D425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F4AB31B0ED51B0019D425 /* ICS Conference.app */,
+				BD9F4ACF1B0ED51B0019D425 /* ICSConferenceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD9F4AB51B0ED51B0019D425 /* ICSConference */ = {
+			isa = PBXGroup;
+			children = (
+				6F67CD70236183C300D5373C /* ConferenceSFUStreamViewController.h */,
+				6F67CD71236183C300D5373C /* ConferenceSFUStreamViewController.mm */,
+				BD9F4AC01B0ED51B0019D425 /* ConferenceStreamViewController.h */,
+				BD9F4AC11B0ED51B0019D425 /* ConferenceStreamViewController.m */,
+				BD50A4A21C7D7E4E005D54D9 /* FileAudioFrameGenerator.h */,
+				BD50A4A31C7D7E68005D54D9 /* FileAudioFrameGenerator.m */,
+				B0C890851B66323600DFF970 /* HorizontalSegue.h */,
+				B0C890861B66323600DFF970 /* HorizontalSegue.m */,
+				BD9F4ABA1B0ED51B0019D425 /* AppDelegate.h */,
+				BD9F4ABB1B0ED51B0019D425 /* AppDelegate.m */,
+				BD9F4ABD1B0ED51B0019D425 /* ConferenceConnectionViewController.h */,
+				BD9F4ABE1B0ED51B0019D425 /* ConferenceConnectionViewController.m */,
+				6F3BD4032366D7AF004C0E54 /* VideoViewCell.h */,
+				6F3BD4042366D7AF004C0E54 /* VideoViewCell.m */,
+				6F67CD74236185B700D5373C /* SFUStreamView.h */,
+				6F67CD73236185B600D5373C /* SFUStreamView.m */,
+				BD9F4C401B12FAB50019D425 /* StreamView.h */,
+				BD9F4C411B12FAB50019D425 /* StreamView.m */,
+				BD664F851F4D21B500448485 /* BrightenFilter.h */,
+				BD664F861F4D21B500448485 /* BrightenFilter.m */,
+				BD9F4AC31B0ED51B0019D425 /* Main.storyboard */,
+				BD9F4AC61B0ED51B0019D425 /* Images.xcassets */,
+				BD9F4AC81B0ED51B0019D425 /* LaunchScreen.xib */,
+				BD9F4AB61B0ED51B0019D425 /* Supporting Files */,
+			);
+			path = ICSConference;
+			sourceTree = "<group>";
+		};
+		BD9F4AB61B0ED51B0019D425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F4AB71B0ED51B0019D425 /* Info.plist */,
+				BD9F4AB81B0ED51B0019D425 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD9F4AD21B0ED51B0019D425 /* ICSConferenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F4AD51B0ED51B0019D425 /* ICSConferenceTests.m */,
+				BD9F4AD31B0ED51B0019D425 /* Supporting Files */,
+			);
+			path = ICSConferenceTests;
+			sourceTree = "<group>";
+		};
+		BD9F4AD31B0ED51B0019D425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F4AD41B0ED51B0019D425 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD9F4AB21B0ED51B0019D425 /* ICSConference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9F4AD91B0ED51B0019D425 /* Build configuration list for PBXNativeTarget "ICSConference" */;
+			buildPhases = (
+				4BE8C19448BE0CCFA24270B0 /* [CP] Check Pods Manifest.lock */,
+				BD9F4AAF1B0ED51B0019D425 /* Sources */,
+				BD9F4AB01B0ED51B0019D425 /* Frameworks */,
+				BD9F4AB11B0ED51B0019D425 /* Resources */,
+				EAF97420C50A8E3253B44D41 /* [CP] Embed Pods Frameworks */,
+				6F76DAEB22DEFB20002F9143 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ICSConference;
+			productName = WoogeenConference;
+			productReference = BD9F4AB31B0ED51B0019D425 /* ICS Conference.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD9F4ACE1B0ED51B0019D425 /* ICSConferenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9F4ADC1B0ED51B0019D425 /* Build configuration list for PBXNativeTarget "ICSConferenceTests" */;
+			buildPhases = (
+				C0865273E3283E867F3CAECF /* [CP] Check Pods Manifest.lock */,
+				BD9F4ACB1B0ED51B0019D425 /* Sources */,
+				BD9F4ACC1B0ED51B0019D425 /* Frameworks */,
+				BD9F4ACD1B0ED51B0019D425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD9F4AD11B0ED51B0019D425 /* PBXTargetDependency */,
+			);
+			name = ICSConferenceTests;
+			productName = WoogeenConferenceTests;
+			productReference = BD9F4ACF1B0ED51B0019D425 /* ICSConferenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD9F4AAB1B0ED51B0019D425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Intel Corporation";
+				TargetAttributes = {
+					BD9F4AB21B0ED51B0019D425 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = HFGD67XYYR;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BD9F4ACE1B0ED51B0019D425 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BD9F4AB21B0ED51B0019D425;
+					};
+				};
+			};
+			buildConfigurationList = BD9F4AAE1B0ED51B0019D425 /* Build configuration list for PBXProject "ICSConference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = BD9F4AAA1B0ED51B0019D425;
+			productRefGroup = BD9F4AB41B0ED51B0019D425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD9F4AB21B0ED51B0019D425 /* ICSConference */,
+				BD9F4ACE1B0ED51B0019D425 /* ICSConferenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD9F4AB11B0ED51B0019D425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9F4AC51B0ED51B0019D425 /* Main.storyboard in Resources */,
+				BD9F4ACA1B0ED51B0019D425 /* LaunchScreen.xib in Resources */,
+				BD9F4AC71B0ED51B0019D425 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9F4ACD1B0ED51B0019D425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BE8C19448BE0CCFA24270B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICSConference-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0865273E3283E867F3CAECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICSConferenceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF97420C50A8E3253B44D41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ICSConference/Pods-ICSConference-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICSConference/Pods-ICSConference-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD9F4AAF1B0ED51B0019D425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD50A4A41C7D7E68005D54D9 /* FileAudioFrameGenerator.m in Sources */,
+				B0C890871B66323600DFF970 /* HorizontalSegue.m in Sources */,
+				BD9F4AC21B0ED51B0019D425 /* ConferenceStreamViewController.m in Sources */,
+				6F67CD72236183C300D5373C /* ConferenceSFUStreamViewController.mm in Sources */,
+				BD664F871F4D21B500448485 /* BrightenFilter.m in Sources */,
+				6F67CD75236185B700D5373C /* SFUStreamView.m in Sources */,
+				6F3BD4062366D7AF004C0E54 /* VideoViewCell.m in Sources */,
+				BD9F4ABC1B0ED51B0019D425 /* AppDelegate.m in Sources */,
+				BD9F4ABF1B0ED51B0019D425 /* ConferenceConnectionViewController.m in Sources */,
+				BD9F4C421B12FAB50019D425 /* StreamView.m in Sources */,
+				BD9F4AB91B0ED51B0019D425 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9F4ACB1B0ED51B0019D425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9F4AD61B0ED51B0019D425 /* ICSConferenceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD9F4AD11B0ED51B0019D425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD9F4AB21B0ED51B0019D425 /* ICSConference */;
+			targetProxy = BD9F4AD01B0ED51B0019D425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD9F4AC31B0ED51B0019D425 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD9F4AC41B0ED51B0019D425 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD9F4AC81B0ED51B0019D425 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD9F4AC91B0ED51B0019D425 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD9F4AD71B0ED51B0019D425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" ../include";
+			};
+			name = Debug;
+		};
+		BD9F4AD81B0ED51B0019D425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" ../include";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD9F4ADA1B0ED51B0019D425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC0D6A7FF4A6F16E43CB553 /* Pods-ICSConference.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HFGD67XYYR;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ICSConference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+					"$(PROJECT_DIR)/../../libs/deps",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intel.webrtc.sample22.conference;
+				PRODUCT_NAME = "ICS Conference";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		BD9F4ADB1B0ED51B0019D425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7687533EC33BBDCC8869372C /* Pods-ICSConference.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HFGD67XYYR;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ICSConference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+					"$(PROJECT_DIR)/../../libs/deps",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.intel.webrtc.sample22.conference;
+				PRODUCT_NAME = "ICS Conference";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		BD9F4ADD1B0ED51B0019D425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82624752141EFB7C75704AC1 /* Pods-ICSConferenceTests.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoogeenConferenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICSConference.app/ICSConference";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		BD9F4ADE1B0ED51B0019D425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFCAD4F3B919401357716EA /* Pods-ICSConferenceTests.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoogeenConferenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICSConference.app/ICSConference";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD9F4AAE1B0ED51B0019D425 /* Build configuration list for PBXProject "ICSConference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9F4AD71B0ED51B0019D425 /* Debug */,
+				BD9F4AD81B0ED51B0019D425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD9F4AD91B0ED51B0019D425 /* Build configuration list for PBXNativeTarget "ICSConference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9F4ADA1B0ED51B0019D425 /* Debug */,
+				BD9F4ADB1B0ED51B0019D425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD9F4ADC1B0ED51B0019D425 /* Build configuration list for PBXNativeTarget "ICSConferenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9F4ADD1B0ED51B0019D425 /* Debug */,
+				BD9F4ADE1B0ED51B0019D425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD9F4AAB1B0ED51B0019D425 /* Project object */;
+}

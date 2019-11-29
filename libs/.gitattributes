@@ -1,0 +1,5 @@
+OWT.framework/OWT filter=lfs diff=lfs merge=lfs -text
+WebRTC.framework/WebRTC filter=lfs diff=lfs merge=lfs -text
+deps/libsioclient.a filter=lfs diff=lfs merge=lfs -text
+deps/libsioclient_tls.a filter=lfs diff=lfs merge=lfs -text
+deps/libsioclient_tls_no_verification.a filter=lfs diff=lfs merge=lfs -text
